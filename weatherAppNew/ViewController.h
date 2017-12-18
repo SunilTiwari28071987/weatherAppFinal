@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) NSInteger startPage;
 
 @end
+
+
+
 
