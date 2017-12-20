@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="b5Z-NY-Tfh" id="cRr-6F-r8r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b5Z-NY-Tfh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrZ-7f-K66" userLabel="Stack Button">
+                    <rect key="frame" x="327" y="627" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xqU-c0-0sW"/>
+                    </constraints>
+                    <connections>
+                        <action selector="stackClicked:" destination="-1" eventType="touchUpInside" id="u8X-tW-POT"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUr-ow-FaS">
+                    <rect key="frame" x="327" y="624" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="KIG-AP-Mas"/>
+                        <constraint firstAttribute="height" constant="40" id="jp3-N9-Gk8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evc-px-P1C" userLabel="Refresh Button">
+                    <rect key="frame" x="8" y="622" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="UKq-D2-Ff7"/>
+                        <constraint firstAttribute="width" constant="40" id="eut-F3-ulv"/>
+                    </constraints>
+                    <connections>
+                        <action selector="refreshClicked:" destination="-1" eventType="touchUpInside" id="S60-Cm-Bdq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KrZ-7f-K66" firstAttribute="leading" secondItem="NUr-ow-FaS" secondAttribute="leading" id="2qx-x8-3La"/>
+                <constraint firstItem="KrZ-7f-K66" firstAttribute="trailing" secondItem="NUr-ow-FaS" secondAttribute="trailing" id="Ecr-ck-uc4"/>
+                <constraint firstAttribute="bottom" secondItem="NUr-ow-FaS" secondAttribute="bottom" constant="3" id="QFP-1r-Idr"/>
+                <constraint firstAttribute="bottom" secondItem="KrZ-7f-K66" secondAttribute="bottom" id="fDS-aO-BKm"/>
+                <constraint firstItem="evc-px-P1C" firstAttribute="leading" secondItem="b5Z-NY-Tfh" secondAttribute="leading" constant="8" id="gNf-r8-eq9"/>
+                <constraint firstAttribute="trailing" secondItem="NUr-ow-FaS" secondAttribute="trailing" constant="8" id="m1F-ws-3W9"/>
+                <constraint firstAttribute="bottom" secondItem="evc-px-P1C" secondAttribute="bottom" constant="5" id="pBT-oK-qzd"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu.png" width="64" height="64"/>
+    </resources>
+</document>
