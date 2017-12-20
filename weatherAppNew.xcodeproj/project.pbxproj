@@ -105,6 +105,8 @@
 		6FB980661FE75E43004B21AE /* clear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9803F1FE75E43004B21AE /* clear.jpg */; };
 		6FB980671FE75E43004B21AE /* thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB980401FE75E43004B21AE /* thermometer.png */; };
 		6FB980681FE75E43004B21AE /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB980411FE75E43004B21AE /* Icon-App-76x76@1x.png */; };
+		6FB9806C1FE9C606004B21AE /* 24CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9806A1FE9C606004B21AE /* 24CollectionViewCell.m */; };
+		6FB9806D1FE9C606004B21AE /* 24CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9806B1FE9C606004B21AE /* 24CollectionViewCell.xib */; };
 		C1EC7227E34CBBD1292C8606 /* libPods-weatherAppNew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 715F816B1766CF52C9C6C462 /* libPods-weatherAppNew.a */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +239,9 @@
 		6FB9803F1FE75E43004B21AE /* clear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clear.jpg; sourceTree = "<group>"; };
 		6FB980401FE75E43004B21AE /* thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thermometer.png; sourceTree = "<group>"; };
 		6FB980411FE75E43004B21AE /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		6FB980691FE9C606004B21AE /* 24CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 24CollectionViewCell.h; sourceTree = "<group>"; };
+		6FB9806A1FE9C606004B21AE /* 24CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 24CollectionViewCell.m; sourceTree = "<group>"; };
+		6FB9806B1FE9C606004B21AE /* 24CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = 24CollectionViewCell.xib; sourceTree = "<group>"; };
 		715F816B1766CF52C9C6C462 /* libPods-weatherAppNew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weatherAppNew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		905BAF5EAFE62AD9E0A6AAB7 /* Pods-weatherAppNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weatherAppNew/Pods-weatherAppNew.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AAD80035C8EBE384D55D22 /* Pods-weatherAppNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherAppNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-weatherAppNew/Pods-weatherAppNew.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +327,9 @@
 				6F60C5D51FE74C8E00E6C890 /* weatherAppNew.xcdatamodeld */,
 				6F1DCAB31FE752DA00FA2652 /* DetailedViewController.h */,
 				6F1DCAB41FE7532600FA2652 /* DetailedViewController.m */,
+				6FB980691FE9C606004B21AE /* 24CollectionViewCell.h */,
+				6FB9806A1FE9C606004B21AE /* 24CollectionViewCell.m */,
+				6FB9806B1FE9C606004B21AE /* 24CollectionViewCell.xib */,
 				6F1DCAB61FE7540900FA2652 /* PageViewController.h */,
 				6F1DCAB71FE7544500FA2652 /* PageViewController.m */,
 				6F1DCAB91FE7547F00FA2652 /* CityListViewController.h */,
@@ -575,6 +583,7 @@
 				6FB980081FE75E35004B21AE /* Icon-App-83.5x83.5@2x.png in Resources */,
 				6FB9804C1FE75E43004B21AE /* Icon-App-60x60@2x.png in Resources */,
 				6FB97FFA1FE75E35004B21AE /* plus.png in Resources */,
+				6FB9806D1FE9C606004B21AE /* 24CollectionViewCell.xib in Resources */,
 				6FB97FF81FE75E35004B21AE /* cold.jpg in Resources */,
 				6FB980111FE75E35004B21AE /* Icon-App-29x29@3x.png in Resources */,
 				6FB9805E1FE75E43004B21AE /* Icon-App-40x40@3x.png in Resources */,
@@ -728,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB9806C1FE9C606004B21AE /* 24CollectionViewCell.m in Sources */,
 				6F60C5D11FE74C8E00E6C890 /* ViewController.m in Sources */,
 				6F1DCABB1FE754A000FA2652 /* CityListViewController.m in Sources */,
 				6F60C5CE1FE74C8E00E6C890 /* AppDelegate.m in Sources */,

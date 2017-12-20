@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *weatherNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *tempratureLabel;
+@property (weak, nonatomic) IBOutlet UILabel *collectionView;
+
 
 @end
 
@@ -75,6 +77,12 @@
     self.label.text = self.titleText;
     self.imageView.clipsToBounds = YES;
     [self fetchOtherDataBasedOnPlace:self.titleText];
+    
+
+//    [self.collectionView registerNib:[UINib nibWithNibName:@"24CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"Cell"];
+//    self.collectionView.backgroundColor = [UIColor clearColor];
+
+
 }
 
 -(void)fetchOtherDataBasedOnPlace:(NSString *)place{
